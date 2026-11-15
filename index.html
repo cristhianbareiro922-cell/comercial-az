@@ -3,133 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comercial az</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-   <h1>Comercial AZ</h1>
-</body>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comercial AZ | Mayorista y Minorista</title>
+    <title>AZ COMERCIAL | Elegancia y Variedad para tu Hogar</title>
+    <!-- Tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header / Navegación -->
-    <header class="header">
-        <div class="logo">Comercial <span>AZ</span></div>
-        <nav class="nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#departamentos">Departamentos</a>
-            <a href="#locales">Sucursales (3)</a>
-            <a href="#contacto" class="btn-nav">Contacto</a>
-        </nav>
+    <!-- BARRA DE NAVEGACIÓN FLOTANTE -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-brand">AZ <span>COMERCIAL</span></a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Departamentos</a></li>
+                <li><a href="#sucursales">Sucursales & Ubicación</a></li>
+                <li><a href="https://wa.me/595981000001?text=Hola%20AZ%20Comercial,%20vengo%20desde%20la%20web" target="_blank" class="btn-nav-wsp"><i class="fab fa-whatsapp"></i> Contacto Directo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CABECERA PRINCIPAL (HERO) - EL LOGO OCUPA TODO EL FONDO -->
+    <header id="inicio" class="hero-header">
+        <!-- El logo corporativo cubre toda la cabecera de fondo -->
+        <div class="hero-bg-logo" style="background-image: url('img/logo.png');"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-contenido">
+            <span class="badge-exclusivo"><i class="fas fa-crown"></i> MAYORISTA Y MENORISTA </span>
+            <h1>Bienvenidos a <span>AZ COMERCIAL</span></h1>
+            <p>El punto de encuentro para tu hogar. Descubre lo mejor en electrodomésticos, pesca, regalos, indumentaria y bazar con una atención de primera.</p>
+            <div class="hero-botones">
+                <a href="#productos" class="btn-dorado">Ver Catálogo <i class="fas fa-arrow-right"></i></a>
+                <a href="#sucursales" class="btn-outline-blanco">Nuestras Sucursales <i class="fas fa-map-marker-alt"></i></a>
+            </div>
+        </div>
     </header>
 
-    <!-- Sección Hero -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <span class="badge">Ventas Mayoristas y Minoristas</span>
-            <h1>Todo lo que necesitas en <span>un solo lugar</span></h1>
-            <p>Encuentra la mayor variedad en electrodomésticos, artículos de pesca, calzados, juguetes, ropería, librería, bazar y regalos con la mejor atención y precios incomparables.</p>
-            <div class="hero-buttons">
-                <a href="#departamentos" class="btn btn-primary">Ver Departamentos</a>
-                <a href="#locales" class="btn btn-secondary">Nuestros Locales</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="floating-badge fb1">⚡ Electrodomésticos</div>
-            <div class="floating-badge fb2">🎣 Pesca & Aire Libre</div>
-            <div class="floating-badge fb3">👟 Calzados & Ropa</div>
-        </div>
-    </section>
-
-    <!-- Sección de Departamentos (Productos) -->
-    <section id="departamentos" class="productos">
-        <h2>Nuestros <span>Departamentos</span></h2>
-        <p class="subtitle">Calidad y variedad garantizada para el hogar, el negocio y el regalo perfecto.</p>
-
-        <div class="grid-productos">
-            <div class="card-producto">
-                <div class="icon">🔌</div>
-                <h3>Electrodomésticos</h3>
-                <p>Línea blanca y tecnología para el hogar con garantía y respaldo.</p>
-            </div>
-            <div class="card-producto">
-                <div class="icon">🎣</div>
-                <h3>Artículos de Pesca</h3>
-                <p>Cañas, reos, señuelos y todo para tus aventuras al aire libre.</p>
-            </div>
-            <div class="card-producto">
-                <div class="icon">👟</div>
-                <h3>Calzados & Ropería</h3>
-                <p>Moda urbana, calzado deportivo y formal para toda la familia.</p>
-            </div>
-            <div class="card-producto">
-                <div class="icon">🧸</div>
-                <h3>Juguetería</h3>
-                <p>Juguetes didácticos, de colección y los favoritos de los más chicos.</p>
-            </div>
-            <div class="card-producto">
-                <div class="icon">📚</div>
-                <h3>Librería</h3>
-                <p>Artículos escolares, de oficina, cuadernos y material didáctico.</p>
-            </div>
-            <div class="card-producto">
-                <div class="icon">🏺</div>
-                <h3>Bazar & Regalos</h3>
-                <p>Utensilios de cocina, decoración de interiores y sorpresas para regalar.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Sucursales (3 Locales) -->
-    <section id="locales" class="locales">
-        <h2>Nuestras <span>3 Sucursales</span></h2>
-        <p class="subtitle">Visítanos en cualquiera de nuestros locales habilitados para atención mayorista y minorista.</p>
-
-        <div class="grid-locales">
-            <!-- Local 1 -->
-            <div class="local-card">
-                <span class="tag-local">Casa Central</span>
-                <h3>Sucursal Centro Comercial</h3>
-                <p class="dir">📍 Av. Principal c/ 14 de Mayo</p>
-                <p class="time">🕒 Lunes a Sábados: 08:00 - 19:00 hs</p>
-                <a href="https://wa.me/" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
+    <!-- SECCIÓN DE PRODUCTOS / CATEGORÍAS -->
+    <section id="productos" class="seccion-productos">
+        <div class="contenedor">
+            <div class="titulo-seccion">
+                <h2>Nuestros <span>Departamentos</span></h2>
+                <div class="linea-dorada"></div>
+                <p>Todo lo que necesitas con la garantía y confianza de siempre</p>
             </div>
 
-            <!-- Local 2 -->
-            <div class="local-card">
-                <span class="tag-local">Zona Norte</span>
-                <h3>Sucursal Paseo Mayorista</h3>
-                <p class="dir">📍 Ruta Transchaco Km 12</p>
-                <p class="time">🕒 Lunes a Sábados: 07:30 - 18:30 hs</p>
-                <a href="https://wa.me/" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
-            </div>
+            <div class="grid-productos">
+                <!-- Tarjeta 1 -->
+                <article class="card-item">
+                    <div class="card-imagen">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=80" alt="Electrodomésticos">
+                        <span class="tag-categoria">Hogar</span>
+                    </div>
+                    <div class="card-cuerpo">
+                        <h3>Electrodomésticos</h3>
+                        <p>Tecnología y comodidad para hacer tu vida diaria mucho más fácil.</p>
+                        <a href="https://wa.me/595900000001?text=Hola,%20quiero%20consultar%20sobre%20Electrodomésticos" target="_blank" class="enlace-wsp">
+                            <i class="fab fa-whatsapp"></i> Consultar artículo
+                        </a>
+                    </div>
+                </article>
 
-            <!-- Local 3 -->
-            <div class="local-card">
-                <span class="tag-local">Zona Sur</span>
-                <h3>Sucursal Mercado Sur</h3>
-                <p class="dir">📍 Av. Las Residentas esq. Los Pinos</p>
-                <p class="time">🕒 Lunes a Sábados: 08:00 - 18:00 hs</p>
-                <a href="https://wa.me/" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
+                <!-- Tarjeta 2 -->
+                <article class="card-item">
+                    <div class="card-imagen">
+                        <img src="https://images.unsplash.com/photo-1529230117010-b6c436154f25?auto=format&fit=crop&w=600&q=80" alt="Pesca">
+                        <span class="tag-categoria">Aventura</span>
+                    </div>
+                    <div class="card-cuerpo">
+                        <h3>Artículos de Pesca</h3>
+                        <p>Equipamiento completo, cañas, reeles y accesorios para tus salidas.</p>
+                        <a href="https://wa.me/595900000001?text=Hola,%20quiero%20consultar%20sobre%20Artículos%20de%20Pesca" target="_blank" class="enlace-wsp">
+                            <i class="fab fa-whatsapp"></i> Consultar artículo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="card-item">
+                    <div class="card-imagen">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80" alt="Regalos">
+                        <span class="tag-categoria">Detalles</span>
+                    </div>
+                    <div class="card-cuerpo">
+                        <h3>Artículos para Regalos</h3>
+                        <p>Sorprende en cada ocasión especial con opciones únicas y elegantes.</p>
+                        <a href="https://wa.me/595900000001?text=Hola,%20quiero%20consultar%20sobre%20Regalos" target="_blank" class="enlace-wsp">
+                            <i class="fab fa-whatsapp"></i> Consultar artículo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="card-item">
+                    <div class="card-imagen">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Ropas">
+                        <span class="tag-categoria">Moda</span>
+                    </div>
+                    <div class="card-cuerpo">
+                        <h3>Ropas e Indumentaria</h3>
+                        <p>Tendencias y comodidad para toda la familia en cada temporada.</p>
+                        <a href="https://wa.me/595900000001?text=Hola,%20quiero%20consultar%20sobre%20Ropas" target="_blank" class="enlace-wsp">
+                            <i class="fab fa-whatsapp"></i> Consultar artículo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 5 -->
+                <article class="card-item">
+                    <div class="card-imagen">
+                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80" alt="Bazar">
+                        <span class="tag-categoria">Variedades</span>
+                    </div>
+                    <div class="card-cuerpo">
+                        <h3>Bazar y Casa</h3>
+                        <p>Utensilios, vajillas y elementos decorativos para embellecer tu hogar.</p>
+                        <a href="https://wa.me/595900000001?text=Hola,%20quiero%20consultar%20sobre%20Bazar" target="_blank" class="enlace-wsp">
+                            <i class="fab fa-whatsapp"></i> Consultar artículo
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contacto" class="footer">
-        <h3>Comercial <span>AZ</span></h3>
-        <p>Líderes en ventas mayoristas y minoristas de gran variedad de productos.</p>
-        <p class="copy">&copy; 2026 Comercial AZ. Todos los derechos reservados.</p>
+    <!-- SECCIÓN DE SUCURSALES CON FOTOS Y UBICACIÓN -->
+    <section id="sucursales" class="seccion-sucursales">
+        <div class="contenedor">
+            <div class="titulo-seccion claro">
+                <h2>Nuestras <span>2 Sucursales</span></h2>
+                <div class="linea-dorada"></div>
+                <p>Acércate a conocernos o comunícate al instante con tu sucursal favorita</p>
+            </div>
+
+            <div class="grid-sucursales">
+                <!-- SUCURSAL 1 -->
+                <div class="card-sucursal-elegante">
+                    <div class="sucursal-foto-box">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Casa Central Sucursal 1">
+                        <span class="badge-sucursal">Casa Central</span>
+                    </div>
+                    <div class="sucursal-contenido">
+                        <h3>Sucursal 1 - Centro</h3>
+                        <ul class="detalles-ubicacion">
+                            <li><i class="fas fa-map-marker-alt"></i> Av. Principal N° 123, Zona Centro</li>
+                            <li><i class="fas fa-clock"></i> Lun a Sáb: 07:30 - 18:30 hs</li>
+                            <li><i class="fas fa-phone"></i> Tel: (0981) 000-001</li>
+                        </ul>
+                        <div class="botones-sucursal">
+                            <a href="https://wa.me/595981000001?text=Hola%20Sucursal%201,%20necesito%20información" target="_blank" class="btn-wsp-sucursal">
+                                <i class="fab fa-whatsapp"></i> WhatsApp Sucursal 1
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" class="btn-mapa-sucursal">
+                                <i class="fas fa-map-marked-alt"></i> Ver Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUCURSAL 2 -->
+                <div class="card-sucursal-elegante">
+                    <div class="sucursal-foto-box">
+                        <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=800&q=80" alt="Sucursal 2 Anexo">
+                        <span class="badge-sucursal">Sucursal Ruta</span>
+                    </div>
+                    <div class="sucursal-contenido">
+                        <h3>Sucursal 2 - Anexo Ruta</h3>
+                        <ul class="detalles-ubicacion">
+                            <li><i class="fas fa-map-marker-alt"></i> Ruta Internacional Km 20, Local 4</li>
+                            <li><i class="fas fa-clock"></i> Lun a Sáb: 08:00 - 19:00 hs</li>
+                            <li><i class="fas fa-phone"></i> Tel: (0981) 000-002</li>
+                        </ul>
+                        <div class="botones-sucursal">
+                            <a href="https://wa.me/595981000002?text=Hola%20Sucursal%202,%20necesito%20información" target="_blank" class="btn-wsp-sucursal">
+                                <i class="fab fa-whatsapp"></i> WhatsApp Sucursal 2
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" class="btn-mapa-sucursal">
+                                <i class="fas fa-map-marked-alt"></i> Ver Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer-elegante">
+        <div class="contenedor footer-grid">
+            <div class="footer-info">
+                <h3>AZ <span>COMERCIAL</span></h3>
+                <p>Innovación, calidad y el compromiso de ofrecerte siempre lo mejor en cada departamento para tu hogar.</p>
+            </div>
+            <div class="footer-redes-box">
+                <p>Encuéntranos en redes sociales</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/595981000001" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AZ COMERCIAL. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/595981000001?text=Hola%20AZ%20Comercial,%20deseo%20hacer%20una%20consulta" target="_blank" class="wsp-flotante" title="Escríbenos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
